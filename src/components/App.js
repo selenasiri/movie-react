@@ -1,5 +1,6 @@
 import React, { useReducer, useEffect } from "react";
 import "./App.css";
+
 import Header from "./Header";
 import Movie from "./Movie";
 import Search from "./Search";
@@ -36,8 +37,6 @@ const reducer = (state, action) => {
       return state;
   }
 };
-
-
 
 const App = () => {
   const [state, dispatch] = useReducer(reducer, initialState);
